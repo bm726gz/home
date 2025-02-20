@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v4.0.0
         with:
           node-version: "18.x"
-      # 复制环境变量文件
+      # 复制环境 变量文件
       - name: Copy .env.example
         run: |
           if (-not (Test-Path .env)) {
